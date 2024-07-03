@@ -14,7 +14,7 @@ class ContactView extends StatelessWidget {
           fit: BoxFit.contain,
           child: Text(
             'CONTACT VIEW',
-            style: GoogleFonts.montserrat(
+            style: GoogleFonts.robotoFlex(
               fontSize: 80,
               fontWeight: FontWeight.bold
             ),

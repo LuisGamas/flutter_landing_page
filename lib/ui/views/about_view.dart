@@ -14,7 +14,7 @@ class Aboutview extends StatelessWidget {
           fit: BoxFit.contain,
           child: Text(
             'ABOUT VIEW',
-            style: GoogleFonts.montserrat(
+            style: GoogleFonts.robotoFlex(
               fontSize: 80,
               fontWeight: FontWeight.bold
             ),

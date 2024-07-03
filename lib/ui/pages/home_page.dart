@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_landing_page/ui/shared/ui_shared.dart';
 import 'package:flutter_landing_page/ui/views/ui_views.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,14 +15,10 @@ class HomePage extends StatelessWidget {
           _HomeBody(),
       
           // * Menu
-          Positioned(
+          const Positioned(
             top: 40,
             right: 20,
-            child: Container(
-              width: 150,
-              height: 50,
-              color: Colors.black,
-            )
+            child: CustomAppMenu()
           ),
         ],
       ),

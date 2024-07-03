@@ -14,7 +14,7 @@ class LocationView extends StatelessWidget {
           fit: BoxFit.contain,
           child: Text(
             'LOCATION VIEW',
-            style: GoogleFonts.montserrat(
+            style: GoogleFonts.robotoFlex(
               fontSize: 80,
               fontWeight: FontWeight.bold
             ),
