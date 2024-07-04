@@ -30,14 +30,10 @@ class _CustomMenuItemState extends State<CustomMenuItem> {
       delay: Duration(milliseconds: widget.delay),
       duration: const Duration(milliseconds: 150),
       child: MouseRegion(
-        onEnter: (event) => setState(() {
-          isHover = true;
-        }),
-        onExit: (event) => setState(() {
-          isHover = false;
-        }),
+        onEnter: (event) => setState(() => isHover = true),
+        onExit: (event) => setState(() => isHover = false),
         child: GestureDetector(
-          onTap: () => widget.onPressed,
+          onTap: () => widget.onPressed(),
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             width: 150,

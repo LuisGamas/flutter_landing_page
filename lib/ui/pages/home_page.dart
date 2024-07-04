@@ -37,7 +37,7 @@ class _HomeBody extends StatelessWidget {
 
     return PageView(
       controller: pageProvider.scrollController,
-      physics: const BouncingScrollPhysics(),
+      physics: const PageScrollPhysics(),
       scrollDirection: Axis.vertical,
       children: const [
         HomeView(),

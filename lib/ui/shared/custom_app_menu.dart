@@ -41,6 +41,7 @@ class _CustomAppMenuState extends State<CustomAppMenu> with SingleTickerProvider
           setState(() {
             isOpen = !isOpen;
           });
+          
         },
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 16),
