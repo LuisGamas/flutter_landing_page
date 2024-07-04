@@ -3,6 +3,12 @@ import 'package:flutter_landing_page/ui/pages/ui_pages.dart';
 
 final homeHandler = Handler(
   handlerFunc: (context, parameters) {
-    return const HomePage();
+    
+    final page = parameters['page']!.first;
+    
+    if (page != '/') {
+      return const HomePage();
+    }
+
   }, 
 );
